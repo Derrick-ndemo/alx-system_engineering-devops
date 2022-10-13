@@ -8,7 +8,7 @@ This project is created with:
 
 ## Table Of Contents 📖
 Here is an  overview on the project tasks:
-* 0. [Where am I](https://github.com/Derrick-ndemo/alx-system_engineering-devops/0x00-shell_basics#0-current_working_directory) : Writes a script that prints the absolute path name of the current working directory.
+* 0. [Where am I](https://github.com/Derrick-ndemo/alx-system_engineering-devops/0x00-shell_basics/0-current_working_directory) : Writes a script that prints the absolute path name of the current working directory.
 * 1. [What’s in there?](https://github.com/Derrick-ndemo/alx-system_engineering-devops/0x00-shell_basics#1-listit) : Displays the contents list of your current directory.
 * 2. [There is no place like home](https://github.com/Derrick-ndemo/alx-system_engineering-devops/0x00-shell_basics#2-bring_me_home) : Writing a script that changes the working directory to the user’s home directory.
 * 3. [The long format](https://github.com/Derrick-ndemo/alx-system_engineering-devops/0x00-shell_basics#3-listfiles) : Displaying current directory contents in a long format
