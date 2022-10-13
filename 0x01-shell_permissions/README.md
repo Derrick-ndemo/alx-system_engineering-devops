@@ -1,10 +1,16 @@
-# 0x01 Shell Permissions
+# Shell permissions 🔥
+This repository acts as a roadmap on the basics of system engineering and DevOps. This repo heavily uses shell programming language in exploring various shell aspects. The project is designed by [ALX Africa](https://www.alxafrica.com/software-engineering-2022/) to equip you with the neccessary skills to become a fully fledged Software Engineer. 
+
+### Technologies 🖥️
+This project is created with:
+* Shell
+
 
 ## Resources
 
 - LinuxCommand.org [Permissions](http://linuxcommand.org/lc3_lts0090.php).
 
-## Tasks
+## Table of contents
 
 0. [My name is Betty](./0-iam_betty) : A script that switches the current user to the user betty.
 1. [Who am I](./1-who_am_i) : A script that prints the effective username of the current user.
@@ -21,10 +27,6 @@
 12. [More directories](./12-directory_permissions) : A script that creates a directory called `dir_holberton` with permissions **751** in the working directory.
 13. [Change group](./13-change_group) : A script that changes the group owner to `holberton` for the file `hello`.
 14. [Owner and group](./100-change_owner_and_group) : A script that changes the owner to `betty` and the group owner to `holberton` for all the files and directories in the working directory.
-15. [Symbolic links](./101-symbolic_link_permissions) : A script that changes the owner and the group owner of `_hello` to `betty` and `holberton` respectively.
-16. [If only](./102-if_only) : A script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
-17. [Star Wars](./103-Star_Wars) : A script that will play the StarWars IV episode in the terminal.
-
 
 ## Licences
 This repository consists of shell associated projects.Subject projects done with [ALX Africa](https://www.alxafrica.com/software-engineering-2022/) Full stack Software Engineering course by Derrick Ndemo.
