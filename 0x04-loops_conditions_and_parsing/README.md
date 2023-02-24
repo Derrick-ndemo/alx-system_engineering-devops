@@ -1,1 +1,7 @@
-Loops conditions and prasing 'Bash scripting'
+# Loops conditions and prasing 
+
+## Languages used
+- Bash
+- shell
+
+
