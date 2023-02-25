@@ -2,4 +2,13 @@
 #!/usr/bin/env bash
 # Kills the 4-to_infinity_and_beyond process
 
-kill "$(pgrep -f 4-to_infinity_and_beyond)"
+
+processName="4-to_infinity_and_beyond"
+
+# find the PID of the process
+PID=`ps -aef | grep -i $processName | head -n 1 | tr -s ' ' | cut -d' ' -f2`
+
+# Send SIGTERM signal to process
+kill -SIGTERM $PID
+
+echo "($processName) Stopped!"
