@@ -18,3 +18,7 @@ A signal is just made like an interrupt; when it is generated at the user level,
 - [Linux Processes](https://www.thegeekstuff.com/2012/03/linux-processes-environment/)
 - [Linux signals](https://www.educative.io/answers/what-are-linux-signals)
 - [Processes management in linux](https://www.digitalocean.com/community/tutorials/process-management-in-linux)
+
+
+# Licences
+This project was created in collaboration with ALX Africa
