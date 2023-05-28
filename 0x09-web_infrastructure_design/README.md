@@ -37,7 +37,7 @@ Resources
 -   [What is a firewall](https://alx-intranet.hbtn.io/rltoken/j6idMcUTyNEDj1oYDQFmUw "What is a firewall")
 
 Learning Objectives
--------------------
+---------------
 
 At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/FPJvEE-DRJDvmVTNWeFR8A "explain to anyone"), **without the help of Google**:
 
