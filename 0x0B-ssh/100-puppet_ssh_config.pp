@@ -1,7 +1,5 @@
-# Set up client ssh config file so that you can connect to the server without typing password
-# Your ssh configuration file must be configured to use private key  ~/.ssh/school
-# your ssh client configuration must be configured to refuse to authenticate using password
-
+# Set up client ssh config file to connect to the server without typing passwd
+inclued stdlib
 
 file_line { 'Turn off passwd auth':
   ensure  => present,
