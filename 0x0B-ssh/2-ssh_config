@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Script configuration that that lets you connect without password
+
+config_file=~/.ssh/config
+private_key=~/.ssh/school
+
+# Check if the config file exists
+if [ ! -f "$config_file" ]; then
+    touch "$config_file"
+    chmod 600 "$config_file"
+fi
+
+# Append the configuration to the config file
+echo "Host <54.90.15.228>" >> "$config_file"
+echo "  IdentityFile $private_key" >> "$config_file"
+echo "  PasswordAuthentication no" >> "$config_file"
+
