@@ -1,5 +1,5 @@
 # Set up client ssh config file to connect to the server without typing passwd
-inclued stdlib
+include stdlib
 
 file_line { 'Turn off passwd auth':
   ensure  => present,
