@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# install nginx on your server
+# Nginx should be listening to port 80
+# when querying at its root / with get reqquest
+# using curl, it must return a page that contains the string Hello world
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Hello world!' > /var/www/html/index.html
+service nginx start
