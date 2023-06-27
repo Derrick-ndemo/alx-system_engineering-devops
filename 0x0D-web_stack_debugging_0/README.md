@@ -1,6 +1,5 @@
-# Web Stack Debugging
+# Web Stack Debugging 
 
-![Devops](https://www.flaticon.com/free-icons/devops)
 
 ## Concepts
 - [Network basics](https://intranet.alxswe.com/concepts/33)
