@@ -11,8 +11,13 @@ if [ ! -f "$config_file" ]; then
     chmod 600 "$config_file"
 fi
 
-# Append the configuration to the config file
+# Append the configuration to the config file Web-01
 echo "Host <54.90.15.228>" >> "$config_file"
+echo "  IdentityFile $private_key" >> "$config_file"
+echo "  PasswordAuthentication no" >> "$config_file"
+
+# Append the configuration to the config file Web-02
+echo "Host <35.153.66.157>" >> "$config_file"
 echo "  IdentityFile $private_key" >> "$config_file"
 echo "  PasswordAuthentication no" >> "$config_file"
 
