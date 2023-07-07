@@ -12,7 +12,7 @@ global
 	ca-base /etc/ssl/certs
 	crt-base /etc/ssl/private
 
-	# See: https://ssl-config.mozilla.org/#server=haproxy&server-version=2.0.3&config=intermediate
+        # See: https://ssl-config.mozilla.org/#server=haproxy&server-version=2.0.3&config=intermediate
         ssl-default-bind-ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
         ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
         ssl-default-bind-options ssl-min-ver TLSv1.2 no-tls-tickets
@@ -34,19 +34,18 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 # start of parameters for codingbro.tech
-frontend codingbro.tech-http-frontend
+frontend www-http-frontend
 	bind	 *:80
-	http-request set-header X-Forwarded-Proto http
-	default_backend	 codingbro.tech-backend
+	default_backend	 www-backend
+	mode	http
 
+frontend  www-https-frontend
+	bind *:443 ssl crt /etc/letsencrypt/live/www.codingbro.tech/privkey.pem
+    default_backend www-backend
+	mode	http
 
-frontend  codingbro.tech-https-frontend
-	bind *:443 ssl crt /etc/ssl/codingbro.tech.pem
-	http-request set-header X-Forwarded-Proto https
-        default_backend codingbro.tech-backend
-
-
-backend aysuarex.tech-backend
+backend www-backend
+		mode	http
         balance roundrobin
         server 171105-web-01 54.90.15.228:80 check
         server 171105-web-02 35.153.66.157:80 check
